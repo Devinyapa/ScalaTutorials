@@ -49,7 +49,7 @@ def income(nH:Double,otH:Double):Double = normalSalary(nH)+ot(otH)
 def taxS(income:Double):Double = income*0.12
 def takeSalary(noOfWorkH:Double,otH:Double):Double = income(noOfWorkH,otH)-taxS(income(noOfWorkH,otH))
 
-println(takeSalary(6,2))
+println(takeSalary(60,60))
 
 //---------------------------------------------------------------------------
 
@@ -61,7 +61,6 @@ val basePrice = 15.00f
 val priceChange = 5
 
 def noOfPeople(priceChange: Int): Int = -1 * (priceChange * 20 / 5) + 120
-def max(a: Float, b: Float): Float = if (a >= b) a else b
 def TicketPrice(priceChange: Int): Float = basePrice + priceChange
 def Income(noOfPeople: Int, ticketPrice: Float): Float = ticketPrice * noOfPeople
 def Cost(noOfPeople: Int): Float = costForEachPerformance + (costForEachAttendee * noOfPeople)
